@@ -11,9 +11,9 @@ Gaussian Process (GP) regression and Generalized Additive Models (GAMs) are both
  * `GauPro` from `"GauPro"`
  
 
-**The more detailed information regarding each package can be found in the package documentations, this work is only focused on the GP regression function in each package. **
+*The more detailed information regarding each package can be found in the package documentations, this work is only focused on the GP regression function in each package.*
 
-In the second part, a real data example will be presented to compare GP regression with GAM and GLM by testing the hypothesis "the sharing of fake news is largely driven by low conscientiousness conservatives" from the study by Lawson and Kakkar (2021). 
+In the second part, a real data example is presented to compare GP regression with GAM and GLM by testing the hypothesis "the sharing of fake news is largely driven by low conscientiousness conservatives" from the study by Lawson and Kakkar (2021). 
  
 
 
