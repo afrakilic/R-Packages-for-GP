@@ -12,7 +12,7 @@ Gaussian Process (GP) regression and Generalized Additive Models (GAMs) are both
  * `GauPro` from `"GauPro"`
  
 
-**The more detailed information regarding each package can be found in the package documentations, this work is only focused on the GP regression function in each package. **
+**The more detailed information regarding each package can be found in the package documentations, this work is only focused on the GP regression function in each package.**
 
 In the second part, a real data example will be presented to compare GP regression with GAM and GLM by testing the hypothesis "the sharing of fake news is largely driven by low conscientiousness conservatives" from the study by Lawson and Kakkar (2021). 
  
@@ -21,6 +21,7 @@ In the second part, a real data example will be presented to compare GP regressi
 ### summary 
 
 You can see the summary of the properties that the packages have in below: 
+
 ```{r}
 sum <- matrix(c(rep(NA, 24)), ncol = 6, nrow = 4)
 colnames(sum) <- c("gam", "brm", "cvek", "gpr", "gausspr", "GauPro")
@@ -40,14 +41,13 @@ knitr::kable(sum)
 ### Generalized Additive Models (GAMs)
 GAMs are a type of regression model that allow for flexible, non-linear relationships between the predictor variables and the response variable. GAMs accomplish this by modeling the response variable as a sum of smooth functions of the predictor variables, rather than a linear combination. This allows for more complex and nuanced relationships to be captured, which can be particularly useful when the true relationship between variables is not well understood or linear.
 
-A generalized additive model for a response variable **$Y$**, modeled as a function of predictor variables **$X_{1}, X_{2}, ..., X_{n}$** can be expressed as:
+A generalized additive model for a response variable $Y$, modeled as a function of predictor variables $X_{1}, X_{2}, ..., X_{n}$ can be expressed as:
 
 $$
 g(E(Y)) = \beta_{0} + f_{1}(X_{1}) + f_{2}(X_{2}) + ... + f_{p}(X_{n}) + \epsilon
 $$
- where **$f_{i}$** are smooth, non-linear functions of the predictor variables **$X_{i}$**, and **$\epsilon$** is a random error term. The functions **$f_{i}$** can be modeled using a variety of smoothing methods, such as splines, kernel methods, or generalized cross-validation.
+ where $f_{i}$ are smooth, non-linear functions of the predictor variables $X_{i}$, and $\epsilon$ is a random error term. The functions $f_{i}$ can be modeled using a variety of smoothing methods, such as splines, kernel methods, or generalized cross-validation.
 
-\qquad 
 
 ### Gaussian Process  (GP) Regression 
 On the other hand, Gaussian Process regression is a probabilistic regression model that is based on the assumption that the response variable follows a Gaussian distribution. GP regression can be seen as a generalization of linear regression, as it allows for non-linear relationships between the predictor variables and the response variable as well. However, rather than modeling the response variable as a sum of smooth functions of the predictor variables, GP regression models the response variable as a distribution over functions. This allows for greater flexibility in modeling complex relationships and also provides a measure of uncertainty in the predictions. The regression function modeled by a multivariate Guassian can be expressed as: 
