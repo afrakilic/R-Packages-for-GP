@@ -520,6 +520,7 @@ mtext(side=1,line=3.6,cex=1.5,font=2,"Political Orientation")
 #y=axis
 yt=seq(10,100,10)
 axis(side=2,at=yt/100,paste0(yt,"%"),las=1)
+mtext(side=2,line=3.5,cex=1.35,"Probability Sharing a Fake Story",font=2)
 
 #Header
 mtext(side=3,font=2,line=1.75,cex=1.35,'GP Simple Slopes')
