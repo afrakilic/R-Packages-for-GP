@@ -41,7 +41,7 @@ $$
 where $X=[x_{1}, ..., x_{n}], f =[f(x_{1}), ..., f(x_{n})], \mu = [m(x_{1}, ..., m(x_{n}))]$, and $K_{ij} = k(x_{i}, x_{j})$. $X$ are observed data points, $m$ represents the mean function, and $k$ represent a positive definite kernel function, which is Radial Basis Function Kernel in this work. Notice that with no observation, the mean function is default to be $m(X) = 0$ given that the data is often normalized to a zero mean. The GP model is a distribution over functions and $K$ defines the shape (smoothness) of this distribution. In particular, if the points $x_{i}$ and $x_{j}$ are considered similar by the kernel, then the function outputs of them, $f(x_{i})$ and $f(x_{j})$ are expected to be similar. RBF kernel can be expressed as: 
 
 $$
-k(x_{i}, x_{j}) = exp(- \frac{||x_{i}, x_{j}||^2} {2\l^{2}})
+k(x_{i}, x_{j}) = exp(- \frac{||x_{i}, x_{j}||^2} {2l^2})
 $$
 
 where $l$ is a free positive parameter, also called $length$ parameter. Higher values of $l$ leads to smoother curves whereas lower values leads to more wiggly curves. 
