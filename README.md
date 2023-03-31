@@ -17,25 +17,6 @@ In the second part, a real data example will be presented to compare GP regressi
  
  \
 
-### summary 
-
-You can see the summary of the properties that the packages have in below: 
-
-```{r}
-sum <- matrix(c(rep(NA, 24)), ncol = 6, nrow = 4)
-colnames(sum) <- c("gam", "brm", "cvek", "gpr", "gausspr", "GauPro")
-rownames(sum) <- c("degre of non-linearity", "posterior uncertainity", "testing", "testing multiple predictors")
-sum[, 1] <- c("+", "+", "+", "+")
-sum[, 2] <- c("+", "+", "+", "+")
-sum[, 3] <- c("+", "-", "+", "+")
-sum[, 4] <- c("+", "+", "-", "-")
-sum[, 5] <- c("+", "+", "-", "-")
-sum[, 6] <- c("-", "+", "-", "-")
-
-
-knitr::kable(sum)
-
-```
 
 ### Generalized Additive Models (GAMs)
 GAMs are a type of regression model that allow for flexible, non-linear relationships between the predictor variables and the response variable. GAMs accomplish this by modeling the response variable as a sum of smooth functions of the predictor variables, rather than a linear combination. This allows for more complex and nuanced relationships to be captured, which can be particularly useful when the true relationship between variables is not well understood or linear.
@@ -63,8 +44,9 @@ where $X=[x_{1}, ..., x_{n}], f =[f(x_{1}), ..., f(x_{n})], \mu = [m(x_{1}, ...,
 $$
 k(x_{i}, x_{j}) = exp(- \frac{||x_{i}, x_{j}||^2} {2\l^2})
 $$
+
 where $l$ is a free positive parameter, also called $length$ parameter. Higher values of $l$ leads to smoother curves whereas lower values leads to more wiggly curves. 
-\qquad
+
 
 One of the key differences between GAMs and GP regression is their underlying assumptions about the nature of the relationships between variables. GAMs assume that the relationships are smooth and can be represented by a sum of smooth functions, while GP regression assumes that the relationships are continuous and can be represented by a distribution over functions. Additionally, GAMs are typically simpler to implement and interpret, while GP regression can be computationally intensive and requires more expertise to use effectively. Ultimately, the choice between GAMs and GP regression will depend on the specific nature of the data and the modeling task at hand.
 
