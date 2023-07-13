@@ -26,7 +26,7 @@ $$
 g(\mu_{i}) = X_{i}\theta ^{*} + f_{1}(x_{1i}) + f_{2}(x_{2i}) + ... + f_{p}(x_{pi}) + \epsilon
 $$
 
- where  $g(.)$ is the link function, $\mu_{i} = E (Y_{i})$, $ X_{i}\theta ^{*}$ is a row of the model matrix for any strictly parametric model components, $\theta$ is the corresponding parameter vector. $f_{i}$ are smooth functions of the predictor variables $x_{i}$, $p$ is the number of variables and $\epsilon \sim N(0, \sigma^2)$ are the residuals with $\sigma^2$ being the variance. The function, $f_{i}$, can be modeled using a variety of smoothing methods, such as splines, kernel methods, or generalized cross-validation. It can also be expressed in a manner similar to mixed models: 
+ where  $g(.)$ is the link function, $\mu_{i} = E(Y_{i})$, $X_{i}\theta^{*}$ is a row of the model matrix for any strictly parametric model components, $\theta$ is the corresponding parameter vector. $f_{i}$ are smooth functions of the predictor variables $x_{i}$, $p$ is the number of variables and $\epsilon \sim N(0, \sigma^2)$ are the residuals with $\sigma^2$ being the variance. The function, $f_{i}$, can be modeled using a variety of smoothing methods, such as splines, kernel methods, or generalized cross-validation. It can also be expressed in a manner similar to mixed models: 
 
 
 ### Gaussian Process  (GP) Regression 
