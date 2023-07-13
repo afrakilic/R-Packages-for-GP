@@ -26,8 +26,7 @@ $$
 g(E(Y)) = \beta_{0} + f_{1}(X_{1}) + f_{2}(X_{2}) + ... + f_{p}(X_{n}) + \epsilon
 $$
 
- where $f_{i}$ are smooth, non-linear functions of the predictor variables $X_{i}$, and $\epsilon$ is a random error term. The functions $f_{i}$ can be modeled using a variety of smoothing methods, such as splines, kernel methods, or generalized cross-validation.
-
+ where $g(.)$ is the link function, $f_{i}$ are smooth non-linear functions of the predictor variables $X_{i}$, $p$ is the number of variables and $\epsilon \sim N(0, \sigma^2)$ are the residuals with $\sigma^2$ being the variance. The function, $f_{i}$, can be modeled using a variety of smoothing methods, such as splines, kernel methods, or generalized cross-validation.
 
 
 ### Gaussian Process  (GP) Regression 
