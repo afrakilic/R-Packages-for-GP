@@ -20,13 +20,12 @@ In the second part, a real data example is presented to compare GP regression wi
 ### Generalized Additive Models (GAMs)
 GAMs are a type of regression model that allow for flexible, non-linear relationships between the predictor variables and the response variable. GAMs accomplish this by modeling the response variable as a sum of smooth functions of the predictor variables, rather than a linear combination. This allows for more complex and nuanced relationships to be captured, which can be particularly useful when the true relationship between variables is not well understood or linear.
 
-A generalized additive model for a response variable **$Y$**, modeled as a function of predictor variables **$X_{1}, X_{2}, ..., X_{n}$** can be expressed as:
+A generalized additive model for a response variable $Y$, modeled as a function of predictor variables $x_{1}, x_{2}, ..., _{n}$ can be expressed as:
 
 $$
-g(E(Y)) = \beta_{0} + f_{1}(X_{1}) + f_{2}(X_{2}) + ... + f_{p}(X_{n}) + \epsilon
+g(\mu_{i}) = X_{i}\theta ^{*} + f_{1}(x_{1i}) + f_{2}(x_{2i}) + ... + f_{p}(x_{pi}) + \epsilon
 $$
-
- where $g(.)$ is the link function, $f_{i}$ are smooth non-linear functions of the predictor variables $X_{i}$, $p$ is the number of variables and $\epsilon \sim N(0, \sigma^2)$ are the residuals with $\sigma^2$ being the variance. The function, $f_{i}$, can be modeled using a variety of smoothing methods, such as splines, kernel methods, or generalized cross-validation.
+ where  $g(.)$ is the link function, $\mu_{i} = E (Y_{i})$, $ X_{i}\theta ^{*}$ is a row of the model matrix for any strictly parametric model components, $\theta$ is the corresponding parameter vector. $f_{i}$ are smooth functions of the predictor variables $x_{i}$, $p$ is the number of variables and $\epsilon \sim N(0, \sigma^2)$ are the residuals with $\sigma^2$ being the variance. The function, $f_{i}$, can be modeled using a variety of smoothing methods, such as splines, kernel methods, or generalized cross-validation. It can also be expressed in a manner similar to mixed models: 
 
 
 ### Gaussian Process  (GP) Regression 
