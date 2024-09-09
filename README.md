@@ -1,5 +1,5 @@
-# R-Packages-for-GP
-Available R-Packages for Gaussian Process Regression
+## Available R-Packages for Gaussian Process Regression
+
 
 Gaussian Process (GP) regression and Generalized Additive Models (GAMs) are both popular methods used in statistical modeling and machine learning for regression tasks. This work aims to compare available R packages to fit GP regression with each other and also with GAM. In the first part, the following R functions will be compared in terms of computation time, quantification of degree of non-linearity, posterior uncertainty and testing multiple predictors (i.e., multiple $X_{i}$);
 
